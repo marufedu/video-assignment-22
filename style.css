@@ -2,131 +2,558 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
-
-/* header section css */
-
-.header-logo{
-    width: 40px;
-    margin-right: 10px;
+/*** Nessesary CSS End Here***/
+body,h1,h2,h3,h4,h5,h6,span,p,a{
+    font-family: 'Work Sans', sans-serif;
 }
 
-.header-tittle span{
-    font-size: 23px!important;
-    
-    font-weight:  500!important;
+img{
+    max-width: 100%;
 }
-
-.header-button {
-    font-weight: 700;
-    font-size: 16px;
-    word-spacing: 1.5px !important;
-    letter-spacing: -1px !important;
-    font-size: 16px;
-    padding: 6px 22px;
-    text-shadow: 0px 1px 0px blue;
+/*** Start Header Section ***/
+.header{
+   
 }
-
-/* End header section css */
-
-/* banner  section css */
-.banner {
-    background-image: url(./img/mbr-10.jpg);
-    background-repeat: no-repeat;
+.nav img{
+    width: 50px;
+}
+.header .nav span {
+	margin-top: 7px;
+	margin-left: 10px;
+	font-weight: 600;
+    transition: 0.2s;
+}
+.header .nav span:hover{
+    color: #ccc;
+}
+.header .header-btn a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #6278df;
+    color: #6278df !important;
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-weight: 800;
+    transition: 0.3s;
+    text-shadow: 0 0 black;
+}
+.header .header-btn a:hover{
+    color: #fff !important;
+    background:#6278df;
+    border: 2px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+/*** End Header Section ***/
+/*** Start Slider Section ***/
+.slider{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
     background-size: cover;
-    padding: 221px 0;
-    background-position: center center;
+    padding: 180px 0;
     position: relative;
     z-index: 1;
-    color: #fff;
-    text-align: center;
 }
 
-.banner::before {
+section.skill.text-center.shadow {
+    padding: 70px 0;
+}
+.slider::before{
     content: "";
-    background: #00000052;
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
     z-index: -1;
 }
-
-.banner-tittle h4 {
-    font-weight: 400;
-    font-size: 27px;
-    text-align: center;
-    margin-bottom: 40px;
+.slider .slider-text p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
 }
-.banner-tittle h2 {
-    font-size: 46px;
-    font-weight: 400;
+.slider .slider-text h2 {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 500;
+	padding-top: 2rem;
+}
+.slider .slider-text .email {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid transparent;
+}
+.slider .slider-text .email:focus{
+    box-shadow: 0px 0px 16px 5px #6278df;
+    border: 2px solid  #6278df;
+    
+}
+.slider .slider-text .sent {
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #5ba533;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    font-size: 22px;
+}
+.e-banner-b {
+    width: 345px;
+    padding: 18px 17px !important;
+}
+
+.s-banner-b {
+    width: 300px;
+    padding: 14px 17px !important;
+}
+
+.slider .slider-text .sent:hover{
+    box-shadow: 3px 3px 27px -3px #6278df;
+    color: #6278df !important;
+    background: #fff;
+    border: 2px solid #6278df;
+}
+/*** End Slider Section ***/
+/*** Start  Skill Section ***/
+.skill h3 {
+	font-size: 3.6rem;
+	line-height: 1.1;
+	font-weight: 600;
+}
+.skill p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #767676;
+	padding-top: 0.5rem;
+}
+/*** End  Skill Section ***/
+
+
+/*** About Section Start ***/
+.about{
+    background: #f7f9ff;
+    padding: 60px 0;
+}
+.about-text{}
+.about-text h2 {
+    margin-bottom: 34px;
+    font-size: 44px;
+}
+.about-text p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.about-right{
+    width: 350px;
+}
+/*** About Section Start ***/
+
+
+/*** Service Section Start ***/
+.service {
+    padding: 100px 0;
+}
+
+.service-tittle {
     text-align: center;
-    margin-bottom: 100px;
+}
+.service-tittle h2 {
+    font-size: 44.8px;
+    font-weight: 400;
+    padding: 8px 0px 24px;
+}
+.service-tittle p {
+    font-size: 25.6px;
+    font-weight: 300;
+    padding: 0px 0px 48px;
+}
+
+.service-content {
+    height: 244px;
+    margin-bottom: 30px;
     
 }
 
-.banner-button {
-    padding: 17px 78px;
-    color: #fff;
-    background-color: #61a83b;
-    outline: none;
-    border: none;
-    font-size: 24px;
-}
-
-.banner-in {
-    width: 30%;
-    padding: 20px 21px;
-    border: none;
-    outline: none;
-    font-weight: 200;
-    margin-right: 10px;
-}
-/* banner  section css */
-
-/* about start */
-.about-section{
-    background: #f7f9ff;
-}
-.about-text-left{
-    margin-top: 120px;
-}
-.about-text-left .lead {
-    font-size: 25px;
-    line-height: 2.7rem;
-}
-
-/* about End */
-
-
-/* feature item section  */
-
-
-.feature-item {
-    height: 300px;
-    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
-}
-.left-img-sec {
+.service-left {
     width: 40%;
     overflow: hidden;
-    border-radius: 5px 0 0 5px;
-}
-.left-test-sec {
-    width: 60%;
-    padding: 25px;
 }
 
-.left-img-sec img {
+.service-left img {
     height: 100%;
-    width: auto !important;
+    width: 224px;
     max-width: inherit;
     position: relative;
-    left: -80px;
+    left: -42px;
 }
 
-/* feature item section  */
+.service-right{
+    width: 60%;
+}
 
-/* protfolio section */
+.service-right-tittle {
+    padding: 20px;
+}
+.service-right-tittle h5 {
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+.service-right-tittle p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
 
-/* protfolio section */
+
+/*** Service Section End ***/
+
+
+/*** Start feature  Section ***/
+.feature {
+    padding: 80px;
+}
+.feature-tittle{}
+.feature-tittle h2 {
+    text-align: center;
+    margin-bottom: 68px;
+    font-size: 44.8px;
+    font-weight: 400;
+}
+
+.feature-items{
+    position: relative;
+    margin-bottom: 30px;
+}
+.feature-items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #4a63d4a1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.feature-items:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.feature-items img{}
+
+
+/*** Start feature  Section ***/
+
+
+/*** Start priching table  Section ***/
+.priching{
+    padding: 100px 0;
+    background: #f7f9ff;
+}
+.priching-tittle{}
+.priching-tittle h2 {
+    font-size: 57.6px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 0px 24px;
+}
+.priching-tittle p {
+    font-size: 25.6px;
+    padding: 0px 0px 48px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.priching-content {
+    padding: 50px;
+    background: white;
+}
+.priching-content h2 {
+    font-size: 44.8px;
+    font-weight: 500;
+}
+.priching-content h5 {
+    font-size: 20.8px;
+    font-weight: 300;
+    margin-bottom: 31px;
+    margin-top: 21px;
+}
+.priching-content ul{}
+.priching-content ul li {
+    font-size: 20.8px;
+    list-style: none;
+    margin-bottom: 35px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #000000b8;
+}
+.priching-content ul li span {
+    width: 31px;
+    font-size: 27px;
+    margin-right: 10px;
+    color: #6278df;
+    display: inline-block;
+}
+
+.priching-content a {
+    display: block;
+    width: 84%;
+    margin: auto;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6278df;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+
+
+.priching-content:hover .p-button{
+    background: #6278df;
+    color: #fff;
+}
+
+.priching-content .p-button:hover{
+    background: #000;
+    color: #fff;
+}
+
+/*** End priching table  Section ***/
+
+/*** start my application  Section ***/
+
+.my-application{
+    padding: 100px 0;
+}
+
+.application-tittle{}
+.application-tittle h4 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 25.6px;
+    margin-bottom: 30px;
+}
+.application-tittle h2 {
+    text-align: center;
+    font-size: 44.8px;
+    font-weight: 400;
+}
+.application-tittle span {
+    display: block;
+    text-align: center;
+    font-size: 81px;
+    opacity: .1;
+}
+.application-tittle p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 33px;
+}
+
+.user-part {
+    width: 18%;
+    /* margin: auto; */
+    
+    display: flex;
+    margin-left: 45%;
+}
+.user-img{}
+.user-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.user-name {
+    margin-left: 18px;
+    margin-top: 15px;
+}
+.user-name h3 {
+    font-size: 24px;
+}
+.user-name p{}
+
+/*** End my application  Section ***/
+
+
+/*** start  about our team   Section ***/
+.about-team{
+    background: #f7f9ff;
+    padding: 80px 0;
+}
+.about-team h2 {
+    font-size: 44.8px;
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+.team-text {
+    margin-bottom: 23%;
+}
+.team-text p {
+    font-size: 20.8px;
+    line-height: 31.2px;
+    font-weight: 300;
+}
+
+.team-data {
+    margin-right: 15px;
+}
+
+.data-img {
+    
+}
+.data-img img {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: -66px;
+    left: 18px;
+}
+.team-data h4 {
+    font-size: 20.8px;
+    font-weight: 400;
+}
+
+.team-data h2 {
+    font-size: 20.8px;
+    margin-bottom: 12px;
+    margin-top: -38px;
+}
+.team-md {
+    padding: 26px;
+}
+
+.team-data p {
+    font-size: 16px;
+    padding: 16px 0px 0px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.team-data a {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 8px 16px;
+    transition: .5s;
+    border-radius: 10px;
+}
+.team-data a:hover{
+    background: rgba(0, 0, 0, 0.61);
+    color: #fff;
+}
+
+
+
+
+/*** End  about our team   Section ***/
+
+/*** start form  Section ***/
+
+.main-form{
+    padding: 50px 0;
+}
+
+.form-content{}
+.form-content h4 {
+    font-weight: 300;
+    font-size: 20.8px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.form-content h2 {
+    font-size: 44.8px;
+    font-weight: 400;
+    margin: 49px 0;
+    text-align: center;
+}
+.form {
+    width: 55%;
+    margin: auto;
+    padding: 54px;
+    margin-top: 60px;
+    border-radius: 7px;
+}
+.form .form-tittle{}
+.form .form-tittle h3 {
+    font-size: 25.6px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 61px;
+}
+
+.f-width {
+    padding: 15px;
+    margin-bottom: 18px;
+    outline: none;
+    width: 100%;
+    font-size: 22px;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+}
+.f-width:focus{
+    border: 1px solid #7084e0;
+    box-shadow: 0px 0px 10px 0px #6278df;
+
+}
+
+
+/* .e-width {
+    padding: 15px;
+    margin-bottom: 18px;
+    outline: none;
+    width: 100%;
+}
+.t-width{
+    padding: 15px;
+    margin-bottom: 18px;
+    outline: none;
+    width: 100%;
+} */
+
+
+.messege {
+    width: 100%;
+    outline: none;
+    border: 1px solid #e4e4e4;
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 6px;
+}
+.messege:focus{
+    border: 1px solid #7084e0;
+    box-shadow: 0px 0px 10px 0px #6278df;
+}
+.form-button {
+    display: block;
+    width: 179px;
+    margin: auto;
+    margin-top: 26px;
+    padding: 16px 29px;
+    font-size: 20px;
+    border-radius: 7px;
+    background: #6278df;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: .3s;
+   
+}
+
+.form-button:hover{
+    background: #fff;
+    border: 2px solid #6278df;
+    color: #6278df;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px #6278df;
+}
+/*** End form  Section ***/
